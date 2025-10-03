@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Belgrano&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+  font-family: Nunito, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+  color-scheme: light dark;
+  background-color: #FEF6E4;
+  margin: 0;
+  padding: 0;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: Belgrano, serif;
+}

@@ -1,0 +1,158 @@
+.mealCard {
+	width: 30%;
+	text-align: left;
+	border-radius: 25px;
+	background-color: #fef6e4;
+	color: #001858;
+	margin: 0 2.5vw;
+}
+
+.imgContainer {
+	width: 100%;
+	overflow: hidden;
+}
+
+.mealImg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	object-position: center;
+	margin: 0 auto;
+	border-radius: 25px;
+}
+
+.mealInfoContainer {
+	padding: 0 1.5vw;
+}
+
+.mealTitle {
+	font-size: 1.5rem;
+}
+
+.tagsContainer {
+	max-width: 100%;
+}
+
+.mealTag {
+	display: inline-block;
+	margin: 0 0.4vw 1vh 0;
+	padding: 2px 12px;
+	border: 2px solid #001858;
+	border-radius: 50px;
+	font-size: 0.9rem;
+	font-weight: 600;
+	transition: all 150ms ease;
+}
+
+.mealTag:hover {
+	background-color: #001858;
+	color: #fef6e4;
+}
+
+.ingredientsTitle {
+	font-size: 1.25rem;
+	font-weight: 800;
+}
+
+.ingredientsList {
+	display: flex;
+	flex-flow: column wrap;
+	max-height: 15vh;
+	padding-left: 2vh;
+}
+
+.btnsContainer {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-content: center;
+	padding: 4vh 1.5vw;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.btnsContainer a {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin: 1vh auto;
+	text-decoration: none;
+}
+
+.linkRecipeBtn {
+	border: 2px solid #001858;
+	color: #001858;
+	border-radius: 50px;
+	padding: 1.5vh 0;
+	font-weight: 600;
+	transition: all 150ms ease;
+}
+
+.linkRecipeBtn:hover {
+	background-color: #001858;
+	color: #fef6e4;
+}
+
+.videoLinkBtn {
+	background-color: #001858;
+	color: #fef6e4;
+	border-radius: 50px;
+	padding: 2vh 0.5vw;
+	font-weight: 600;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1330px) {
+	.mealCard {
+		width: 40%;
+		margin: 0 1.5vw;
+	}
+}
+
+@media only screen and (max-width: 1180px) {
+	.mealCard {
+		width: 50%;
+		margin: 0 1vw;
+	}
+}
+
+@media only screen and (max-width: 916px) {
+	.mealCard {
+		width: 80%;
+		margin: 1vh 1vw;
+	}
+
+	.mealInfoContainer {
+		padding: 0 3vw;
+	}
+
+    
+	.mealTag {
+        font-size: 0.8rem;
+	}
+    
+    .ingredientsTitle {
+        font-size: 1.15rem;
+    }
+    
+    .ingredientItem {
+        font-size: 1rem;
+    }
+
+	.ingredientsList {
+		max-height: 25vh;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.mealCard {
+		width: 90%;
+		margin: 1vh 1vw;
+	}
+
+	.ingredientsList {
+		max-height: 40vh;
+		padding-left: 3vh;
+	}
+}

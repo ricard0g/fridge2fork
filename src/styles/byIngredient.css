@@ -1,0 +1,116 @@
+.byIngredientPageContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: #F3D2C1;
+    padding-bottom: 5vh;
+}
+
+.navBarContainer {
+    width: 50%;
+    padding: 0.5vh 2vw;
+    background-color: #FEF6E4;
+    border-radius: 50px;
+    margin: 3vh auto;
+}
+
+.navBarList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.navBtn {
+    padding: 1.5vh 2vw;
+    border-radius: 50px;
+    border: 2px solid #001858;
+    background-color: transparent;
+    color: #001858;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 150ms ease;
+}
+
+.navBtn:hover {
+    background-color: #001858;
+    color: #FEF6E4;
+}
+
+.navHomeBtn {
+    display: block;
+    padding: 0 1vw;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 100ms ease;
+}
+
+.navHomeBtn:hover {
+    background-color: #e9dbbdce;
+    border-radius: 10px;
+}
+
+.mealCardsContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+}
+
+.notFoundContainer {
+    width: 50%;
+    padding: 0.75vh 0;
+    background-color: darkred;
+    border-radius: 50px;
+}
+
+.notFoundText {
+    font-size: 1.2rem;
+}
+
+.notFoundSpan {
+    color: papayawhip;
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 916px) {
+    .navBarContainer {
+        width: 70%;
+        padding: 0.3vh 2vw;
+    }
+
+    .mealCardsContainer {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .navBarContainer {
+        width: 85%;
+        padding: 0.3vh 2vw;
+    }
+
+    .navBtn {
+        font-size: 0.8rem;
+    }
+
+    .navHomeBtn {
+        font-size: 2.5rem;
+    }
+}

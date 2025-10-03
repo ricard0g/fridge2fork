@@ -1,0 +1,148 @@
+.randomMealContainer {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 0 1vw;
+}
+
+.randomMealCard {
+  width: 100%;
+  text-align: left;
+  border-radius: 25px;
+  background-color: #fef6e4;
+  color: #001858;
+  margin: 0 auto;
+}
+
+.randomImgContainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.randomMealImg {
+  max-width: 100%;
+  height: auto;
+  object-position: center;
+  image-rendering: optimizeQuality;
+  border-radius: 25px;
+}
+
+.randomMealInfoContainer {
+  padding: 0 1.5vw;
+}
+
+.randomMealTitle {
+  font-size: 1.5rem;
+}
+
+.randomTagsContainer {
+  max-width: 100%;
+}
+
+.randomMealTag {
+  display: inline-block;
+  margin: 0 0.4vw 1vh 0;
+  padding: 2px 12px;
+  border: 2px solid #001858;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 150ms ease;
+}
+
+.randomMealTag:hover {
+  background-color: #001858;
+  color: #fef6e4;
+}
+
+.randomIngredientsTitle {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.randomIngredientsList {
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 15vh;
+  padding-left: 2vh;
+}
+
+.randomBtnsContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-content: center;
+  padding: 4vh 1.5vw;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.randomBtnsContainer a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 1vh auto;
+  text-decoration: none;
+}
+
+.randomLinkRecipeBtn {
+  border: 2px solid #001858;
+  color: #001858;
+  border-radius: 50px;
+  padding: 1.5vh 0;
+  font-weight: 600;
+  transition: all 150ms ease;
+}
+
+.randomLinkRecipeBtn:hover {
+  background-color: #001858;
+  color: #fef6e4;
+}
+
+.randomVideoLinkBtn {
+  background-color: #001858;
+  color: #fef6e4;
+  border-radius: 50px;
+  padding: 2vh 0;
+  font-weight: 600;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 750px) {
+  .randomMealCard {
+    margin: 0 1.5vw;
+  }
+
+  .randomMealInfoContainer {
+    padding: 0 3vw;
+  }
+
+  .randomMealTag {
+    font-size: 0.8rem;
+  }
+
+  .randomIngredientsTitle {
+    font-size: 1.15rem;
+  }
+
+  .randomIngredientItem {
+    font-size: 1rem;
+  }
+
+  .randomIngredientsList {
+    max-height: 25vh;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .randomMealCard {
+    width: 90%;
+    margin: 1vh 1vw;
+  }
+
+  .randomIngredientsList {
+    max-height: 40vh;
+    padding-left: 3vh;
+  }
+}

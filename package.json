@@ -1,5 +1,6 @@
 {
-  "name": "martimeals",
+  "name": "Fridge2Fork",
+  "author": "Ricardo Guzman",
   "private": true,
   "version": "0.0.0",
   "type": "module",

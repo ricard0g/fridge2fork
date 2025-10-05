@@ -1,8 +1,6 @@
-![MartiMeals Banner](/public/martimeals-banner.png "Banner Marti Meals")
+# Fridge2Fork App
 
-# Marti Meals App
-
-This is a simple project created as a gift for my girlfriend where she is able to find new recipes either based on the ingredient or completely random.
+This is a simple project created where the user is able to find new recipes either based on the ingredient or completely random.
 
 ## Features
 

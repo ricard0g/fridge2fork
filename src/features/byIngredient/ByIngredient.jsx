@@ -53,9 +53,8 @@ export default function ByIngredient() {
 			return (
 				<div role="alert" className="notFoundContainer">
 					<p className="notFoundText">
-						Marti, no hay comidas con{" "}
-						<span className="notFoundSpan">"{ingredient}"</span> de ingrediente!
-						Lo siento te he fallado 😔
+						No recipes found with{" "}
+						<span className="notFoundSpan">"{ingredient}"</span> as ingredient! 😔
 					</p>
 				</div>
 			);
@@ -94,7 +93,7 @@ export default function ByIngredient() {
 							className="navHomeBtn"
 							onClick={handleResetMealsByGoingHome}
 						>
-							👩🏻‍🍳
+							🥘
 						</Link>
 					</li>
 					<li className="navBtnContainer">

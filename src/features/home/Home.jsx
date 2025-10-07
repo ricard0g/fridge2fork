@@ -38,7 +38,7 @@ export default function Home() {
     const errorMsg = (
         <div className="inputError">
             <p className="textError">
-                Tienes que escribir un ingrediente para poder buscar con este botón Marti!
+                Introduce and ingredient for search please
             </p>
         </div>
     );
@@ -85,9 +85,9 @@ export default function Home() {
                     </Link>
                     <Link to="/aleatorio" className="homeBtn">Random</Link>
                 </div>
-                <div>
-                    {content}
-                </div>
+            </div>
+            <div className="ingredientsContainer">
+                {content}
             </div>
         </section>
     );

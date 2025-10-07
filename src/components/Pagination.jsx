@@ -24,7 +24,7 @@ export function Pagination({
         } else if (currentPage + halfWindow >= totalPages) { // Checking if we're towards the end of page numbers
             startPage = totalPages - (pagesPerWindow + 1)
             endPage = totalPages;
-        } else {
+        } else { // We're in the middle
             startPage = currentPage - halfWindow;
             endPage = currentPage + halfWindow;
         }
@@ -34,25 +34,24 @@ export function Pagination({
         }
     }
 
-    const handleNext = () => paginate(currentPage + 1);
-    const handlePrev = () => paginate(currentPage - 1);
+    const handleNext = () => currentPage !== totalPages ? paginate(currentPage + 1) : null;
+    const handlePrev = () => currentPage !== 1 ? paginate(currentPage - 1) : null;
     const handleFirst = () => paginate(1);
     const handleLast = () => paginate(totalPages);
 
     return (
         <div className="paginationContainer">
             <ul className="paginationList">
+
                 <li>
-                    <button onClick={handlePrev}>{'←'}</button>
+                    <button className="prevNextBtn" onClick={handlePrev}>{'←'}</button>
                 </li>
+
                 <li>
-                    <button onClick={handleFirst}>
+                    <button className="positionBtn" onClick={handleFirst}>
                         First
                     </button>
                 </li>
-
-
-
 
                 {pageNumbers.map((number, index) => (
                     <li key={index}>
@@ -66,13 +65,13 @@ export function Pagination({
                 ))}
 
                 <li>
-                    <button onClick={handleLast}>
+                    <button className="positionBtn" onClick={handleLast}>
                         Last
                     </button>
                 </li>
 
                 <li>
-                    <button onClick={handleNext}>{'→'}</button>
+                    <button className="prevNextBtn" onClick={handleNext}>{'→'}</button>
                 </li>
 
             </ul>

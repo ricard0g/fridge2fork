@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
+    min-width: 50%;
     margin: 0 auto;
 }
 
@@ -27,4 +28,28 @@
 .currentPage {
 	background-color: #f582ae40;
 	border: 2px solid #f582ae;
+}
+
+.positionBtn {
+    background-color: #001858;
+	border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    padding: 4px 12px;
+}
+
+.prevNextBtn {
+    padding: 4px 12px;
+	background-color: #f582ae;
+	color: #001858;
+	font-weight: 600;
+	border-radius: 50px;
+    border: none;
+    cursor: pointer;
+	text-decoration: none;
+	transition: all 200ms ease;
+}
+
+.prevNextBtn:hover {
+	background-color: #D9507D;
 }

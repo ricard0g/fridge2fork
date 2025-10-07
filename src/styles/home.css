@@ -1,14 +1,16 @@
 .homePage {
 	display: flex;
+    flex-flow: column;
 	align-items: center;
 	justify-content: center;
-	height: 90vh;
+	height: 100vh;
 	width: 100%;
 }
 
 .searchContainer {
-	height: 100%;
+	/* height: 100%; */
 	width: 100%;
+    margin: 0 0 5vh 0;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
@@ -114,14 +116,16 @@
 	box-shadow: 4px 4px 0 #001858;
 }
 
+
 .inputError {
 	position: fixed;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	top: 3vh;
-	left: 0.5vw;
-	width: 99%;
+	left: 50%;
+    transform: translateX(-50%);
+	width: 25%;
 	height: 5vh;
 	background-color: darkred;
 	z-index: 1;
@@ -131,8 +135,8 @@
 
 .textError {
 	color: whitesmoke;
-	width: 80%;
-	font-size: 1.25rem;
+	width: 100%;
+	font-size: 1.125rem;
 	font-weight: 600;
 	text-align: center;
 	z-index: 2;
